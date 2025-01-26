@@ -1,8 +1,7 @@
 comment @
 MADE BY
-INSHARAH IRFAN NAZIR <3
-23I-0615
-CS-D
+INSHARAH IRFAN NAZIR 
+WITH <3
 ENJOY :DDDDD
 @
 
@@ -1571,7 +1570,7 @@ checkShootTimer proc
     mov ebx, lastBulletMoveTime
     sub eax, ebx
     cmp eax, 50 ; 50 ms delay
-    jl skipBulletMove
+    jb skipBulletMove
 
     ; update last move time and call shoot
     invoke GetTickCount
@@ -1617,7 +1616,7 @@ checkBallMoveTimer2 proc
     mov ebx, lastMoveTime
     sub eax, ebx
     cmp eax, 750
-    jl skipMove
+    jb skipMove
 
     ;update last move time
     invoke GetTickCount
@@ -1948,7 +1947,7 @@ checkBallMoveTimer1 proc
     mov ebx, lastMoveTime
     sub eax, ebx
     cmp eax, 1000
-    jl skipMove
+    jb skipMove
 
     ;update last move time
     invoke GetTickCount
@@ -2863,7 +2862,7 @@ checkBallMoveTimer3 proc
     mov ebx, lastMoveTime
     sub eax, ebx
     cmp eax, 500 
-    jl skipMove
+    jb skipMove
 
     ;update last move time
     invoke GetTickCount
